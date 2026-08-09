@@ -1,0 +1,99 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--admin-line);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--admin-shadow);
+}
+
+thead {
+  background: linear-gradient(135deg, var(--admin-primary), var(--admin-primary-soft));
+  color: white;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  text-align: center;
+  border-bottom: 1px solid rgba(22, 55, 47, 0.08);
+}
+
+tbody tr:hover {
+  background: rgba(35, 73, 62, 0.04);
+}
+
+.cimg {
+  width: 92px;
+  height: 92px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 12px 24px rgba(22, 55, 47, 0.16);
+}
+
+.view-btn {
+  background: linear-gradient(135deg, var(--admin-primary), var(--admin-primary-soft));
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 14px 26px rgba(22, 55, 47, 0.18);
+}
+
+.view-btn:hover {
+  transform: translateY(-1px);
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 18px;
+}
+
+.button-group button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: rgba(22, 55, 47, 0.08);
+  color: var(--admin-primary);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.button-group button:hover {
+  background: var(--admin-accent);
+  color: white;
+  transform: translateY(-1px);
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+
+  .cimg {
+    width: 72px;
+    height: 72px;
+  }
+
+  .button-group {
+    justify-content: flex-start;
+  }
+}

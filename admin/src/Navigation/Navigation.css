@@ -1,0 +1,140 @@
+.main {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  left: 20px;
+  top: 86px;
+  width: 250px;
+  height: calc(100vh - 106px);
+  padding: 24px 18px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(22, 55, 47, 0.97), rgba(31, 70, 59, 0.95));
+  box-shadow: 0 24px 55px rgba(22, 55, 47, 0.18);
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li + li {
+  margin-top: 10px;
+}
+
+.nav a {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 14px;
+  color: #f8f4ec;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.22s ease, transform 0.22s ease;
+}
+
+.nav a.active,
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateX(2px);
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 26px;
+  left: 20px;
+  z-index: 1001;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--admin-primary);
+  color: white;
+  box-shadow: var(--admin-shadow);
+  cursor: pointer;
+}
+
+.topbar {
+  position: fixed;
+  top: 16px;
+  left: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 62px;
+  padding: 10px 18px 10px 286px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  background: rgba(255, 251, 245, 0.84);
+  box-shadow: 0 20px 40px rgba(20, 38, 33, 0.1);
+  backdrop-filter: blur(14px);
+}
+
+.topbar-brand {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--admin-primary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar-link {
+  padding: 10px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--admin-primary);
+  background: rgba(22, 55, 47, 0.06);
+}
+
+.topbar-link.active {
+  color: #fff8ee;
+  background: linear-gradient(135deg, var(--admin-primary), var(--admin-primary-soft));
+}
+
+.page-shell {
+  width: calc(100% - 320px);
+  margin-left: 300px;
+  margin-top: 108px;
+  padding: 12px 20px 32px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .topbar {
+    left: 14px;
+    right: 14px;
+    padding: 10px 16px 10px 72px;
+  }
+
+  .sidebar {
+    left: 14px;
+    top: 82px;
+    width: min(82vw, 280px);
+    transform: translateX(-120%);
+    transition: transform 0.28s ease;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .page-shell {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 98px;
+    padding: 12px 14px 24px;
+  }
+}
