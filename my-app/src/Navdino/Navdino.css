@@ -1,0 +1,140 @@
+/* Header Styles */
+.headerdio {
+  background-color: #000000;
+  padding: 0px 0;
+  color: #fff;
+
+
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  color: #f4c542;
+}
+
+.navdio {
+  display: flex;
+  align-items: center;
+}
+
+.uldio {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.lidio {
+  display: flex;
+  align-items: center;
+}
+
+.lidio a,
+.back-btn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.lidio a:hover,
+.back-btn:hover {
+  background-color: #f4c542;
+  color: #1a3c34;
+  border-radius: 6px;
+}
+
+/* Footer Styles */
+.footerdio {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer-contentdio h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #f4c542;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f4c542;
+}
+
+.footer-socialdio {
+  margin: 20px 0;
+}
+
+.footer-socialdio a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer-socialdio img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.footer-socialdio img:hover {
+  transform: scale(1.1);
+}
+
+.footer-copyrightdio {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .uldio {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,122 @@
+.about-us {
+
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+ 
+ 
+}
+.pic {
+  height: auto;
+  margin-top: 280px;
+  margin-right: 20px;
+  width: 50%;
+  border-radius: 12px;
+}
+.aboutt {
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.textt {
+  width: 540px;
+}
+.textt h2 {
+  color: #333;
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.textt h5 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.spann {
+  color:rgba(31, 100, 227, 0.805);
+}
+.textt p {
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.dataa {
+  margin-top: 30px;
+}
+.hire {
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover {
+  background: #000;
+
+}
+
+
+
+.help-page-container {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+
+
+}
+.page-title {
+  color: #333;
+}
+.faq-section {
+  margin-bottom: 20px;
+  
+}
+.faq-heading {
+  margin: 10px 0;
+  color: #333;
+}
+.faq-question {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.faq-answer {
+  margin-left: 20px;
+}
+.contact-form-section {
+
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 50%;
+}
+.form-label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.input-field, .textarea-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+
+  border-radius: 5px;
+}
+.submit-button {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.submit-button:hover {
+  background: #218838;
+}

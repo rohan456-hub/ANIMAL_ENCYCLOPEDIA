@@ -1,0 +1,96 @@
+/* Background styling */
+.backgroundg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+background-image: url(forest-branch-texture-environment-foliage-pattern-green-jungle-color-insect-darkness-flora-invertebrate-conifer-trees-leaves-outdoors-woods-rainforest-habitat-beetle-screenshot-natural-environment-computer-\ copy.jpg);
+background-size: cover;
+}
+
+/* Registration form container */
+.formg {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  width: 350px;
+  padding-right:60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Title styling */
+.reg {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+/* Input field styling */
+.input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input:focus {
+ border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Register button */
+.form-btn {
+  width: 100%;
+  background: #6e8efb;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-btn:hover {
+  background: #5a7bfc;
+}
+
+/* Login link */
+.text {
+  margin-top: 15px;
+}
+
+.text h3 {
+  font-size: 14px;
+}
+
+.text a {
+  color: #6e8efb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.text a:hover {
+  text-decoration: underline;
+}

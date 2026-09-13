@@ -1,0 +1,287 @@
+Video Full Width
+.video-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .video-container{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%; /* Adjust height of fade */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    pointer-events: none;
+   
+  }
+  
+  .videoa {
+    width: 100%;
+    max-height: 500px; /* Adjust height if needed */
+    object-fit: cover;
+    border-radius: 0;
+    pointer-events: none;
+    margin-top: 200px;
+  }
+  
+  /* Text Overlay */
+  .videotext h1 {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    width: 90%;z-index: 2; /* Ensures text is above the fade */
+    
+    
+  }
+  
+  
+  
+  
+  /* Animal Details Main Section */
+  .admain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+   
+    
+    margin: 20px auto;
+    width: 1400px;
+  }
+  
+  /* Image Box */
+  .adboxa {
+    flex: 1;
+    width: 800px;
+    text-align: center;
+  }
+  
+  .adimg {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .adimg:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Details Box */
+  .adboxb {
+    flex: 1;
+    min-width: 400px;
+    padding: 20px;
+  }
+  
+  .adname {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .hrt {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+  }
+  
+  .adtag {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .tag {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Audio Player */
+  audio {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Additional Info */
+  /* Main Details Section */
+  .details-section {
+    width: 80%;
+    max-width: 1200px;
+  margin-left: 70px ;
+    padding: 20px;
+   
+  }
+  
+  /* Headings */
+  .adatag {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-left: 5px solid #ff5733; /* Stylish left border */
+    padding-left: 10px;
+  }
+  
+  /* Paragraph Text */
+  .sd {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .details-section {
+      width: 95%;
+    }
+  
+    .adatag {
+      font-size: 1.6rem;
+    }
+  
+    .sd {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .admain {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .adboxa, .adboxb {
+      width: 90%;
+    }
+  
+    .videoa {
+      max-width: 90%;
+    }
+  }
+  
+  
+  /* List Container */
+  .list-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  /* List Item */
+  .list-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .list-item:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Alternate Backgrounds for List */
+  .list-item:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  /* Image Styling */
+  .list-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  /* Content Section */
+  .list-content {
+    flex: 1;
+  }
+  
+  /* Animal Name */
+  .list-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .list-title a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+  }
+  
+  .list-title a:hover {
+    color: #ff5733;
+  }
+  
+  /* Description */
+  .list-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* "Discover More" Link */
+  .discover-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff5733;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .discover-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .list-item {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .list-img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    .list-content {
+      width: 100%;
+    }
+  }

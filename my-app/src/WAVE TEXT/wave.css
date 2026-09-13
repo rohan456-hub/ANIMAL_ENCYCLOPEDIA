@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
+
+.mainy {
+  color: #ffffff;
+  font-family: 'Unbounded', cursive;
+  font-weight: 700;          /* 1000 isn't valid – 700 is the boldest supported in most fonts */
+  font-size: 24px;           /* Add a strong heading size */
+  margin-left: 20px;
+  margin-top: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  text-align: center;        /* Optional: Center it if it's a hero/heading */
+}
+
+@media (max-width: 768px){
+    .mainy{
+       
+        display: none;
+    }
+    .mainb{
+        font-size: 60px;
+    }
+}

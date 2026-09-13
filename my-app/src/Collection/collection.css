@@ -1,0 +1,33 @@
+.title{
+    font-size: 70px;
+    color: #17351b;
+    margin-left: 80px;
+}
+.cimg{
+
+    --s: 200px;   /* the size of the image */
+    --b: 4px;     /* the border thickness*/
+    --g: 3px;    /* the gap */
+    --c: rgba(7,27,26,255); /* the color */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+    border-radius: 50%;
+  
+    cursor: pointer;
+    transition: .6s;
+  
+  
+  
+  }
+  .cimg:hover{
+    
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    
+  }
+
+
+  

@@ -1,0 +1,139 @@
+/* Navbar Container - Glassmorphism Effect */
+.navbarpets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(16, 155, 155, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  flex-wrap: wrap; /* Prevents breaking into multiple lines */
+}
+
+/* Logo */
+.navbar-logopets h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+}
+
+/* Navbar Links */
+.navbar-linkspets {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures all items stay in one line */
+}
+
+/* Links Styling */
+.navbar-linkspets .mainlink,
+.navbar-linkspets .back-to-wildlife {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap; /* Prevents text from breaking */
+}
+
+/* Navbar Links */
+.navbar-linkspets .mainlink,
+.navbar-linkspets .back-to-wildlife {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap; /* Prevents text from breaking */
+}
+
+/* FIXED HOVER EFFECT: Smooth Glow & Scale */
+.navbar-linkspets .mainlink:hover,
+.navbar-linkspets .back-to-wildlife:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.4);
+  transform: scale(1.05); /* Slight pop-out effect */
+}
+
+/* FIX: Remove the old buggy hover effect */
+.navbar-linkspets .mainlink::before,
+.navbar-linkspets .back-to-wildlife::before {
+  display: none; /* No unnecessary animations */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hamburger Bars */
+.bar {
+  background: #fff;
+  height: 4px;
+  width: 30px;
+  margin: 4px 0;
+  transition: 0.4s ease-in-out;
+  border-radius: 2px;
+}
+
+/* Animated Hamburger Effect */
+.bar.open:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* RESPONSIVE FIX: Keep Everything in One Line */
+@media (max-width: 768px) {
+  .navbarpets {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px 20px;
+    overflow-x: auto; /* Prevents breaking into multiple lines */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-linkspets {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    display: flex;
+    white-space: nowrap; /* Prevents wrapping */
+  }
+
+  .navbar-linkspets .mainlink,
+  .navbar-linkspets .back-to-wildlife {
+    font-size: 1rem;
+  }
+}

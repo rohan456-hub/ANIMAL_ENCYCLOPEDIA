@@ -1,0 +1,87 @@
+/* AddPets.css */
+
+/* Container for the entire form */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Title */
+  .form-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Each input group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  /* Label */
+  .form-group label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+  }
+  
+  /* Text inputs, file, and select */
+  .inputtt {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    color:black  ;
+    
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #0077ff;
+  }
+  
+  /* Textarea */
+  .textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    resize: vertical;
+    min-height: 80px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .textarea:focus {
+    border-color: #0077ff;
+  }
+  
+  /* Submit button */
+  .btnnn {
+    padding: 14px;
+    background-color: #0077ff;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnnn:hover {
+    background-color: #005fcc;
+  }
+
+  
+  

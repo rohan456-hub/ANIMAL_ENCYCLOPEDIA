@@ -1,0 +1,123 @@
+/* Footer Container - Glassmorphism Style */
+.footerpets {
+  background: rgba(16, 155, 155, 0.8);
+  backdrop-filter: blur(12px);
+  padding: 30px 20px;
+  text-align: center;
+  color: #fff;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px 20px 0 0;
+}
+
+/* Footer Content */
+.footer-contentpets h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+ color: #fff;
+
+  margin-bottom: 10px;
+}
+
+.footer-contentpets p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Footer Links */
+.footer-linkspets ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.footer-linkspets ul li {
+  display: inline-block;
+}
+
+/* Link Styling */
+.footer-linkspets a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-linkspets a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+
+/* Social Media Icons */
+.footer-socialpets {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-socialpets a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-socialpets a:hover {
+  transform: scale(1.2);
+}
+
+.footer-socialpets img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Copyright Section */
+.footer-copyrightpets {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footerpets {
+    padding: 20px;
+  }
+
+  .footer-linkspets ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-socialpets {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-socialpets a {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer-contentpets h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-contentpets p {
+    font-size: 0.9rem;
+  }
+}

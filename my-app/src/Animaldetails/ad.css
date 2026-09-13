@@ -1,0 +1,198 @@
+
+
+/* Video Section */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.videoa {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videotext {
+  position: absolute;
+  bottom: 20px;
+  left: 0%;
+
+  text-align: center;
+  z-index: 1000;
+  color: white;
+  padding: 15px 20px;
+}
+
+.videotext h1 {
+  margin: 0;
+  color: aliceblue;
+  font-size: 2.5rem;
+}
+
+/* Animal Details Section */
+.admain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 30px;
+  gap: 30px;
+}
+
+/* Image Box */
+.adboxa {
+  flex: 1;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adimg {
+  width: 100%;
+  max-width: 450px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.adimg:hover {
+  transform: scale(1.05);
+}
+
+/* Details Box */
+.adboxb {
+  flex: 2;
+  min-width: 450px;
+  padding: 10px 20px;
+}
+
+
+.adname {
+  font-size: 2.2rem;
+  color: #333;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.hrt {
+  border: 2px solid #007BFF;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.adtagg,
+.adtag {
+  font-size: 1.3rem;
+  color: #444;
+  text-align: left;
+  margin: 8px 0;
+}
+
+.tag {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+/* Unique Sound Box */
+.audio-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.sound-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sound-button:hover {
+  background-color: #0056b3;
+}
+
+.sound-button i {
+  margin-right: 8px;
+}
+
+/* Details Section */
+.details-section {
+  max-width: 1200px;
+  margin: 40px auto;
+
+  padding: 30px;
+}
+
+.adatag {
+  font-size: 1.7rem;
+  color: #007BFF;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.sd {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Responsive Full-Screen Fix */
+@media screen and (max-width: 1000px) {
+  .admain {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .adboxa, .adboxb {
+    width: 100%;
+    text-align: center;
+  }
+
+  .adname, .adtagg, .adtag {
+    text-align: center;
+  }
+
+  .details-section {
+    padding: 20px;
+  }
+
+  .audio-container {
+    justify-content: center;
+  }
+}
+
+.gallery-section{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;;
+
+
+
+}
+.adimgg{
+width: 100%;
+aspect-ratio: 1/1;
+object-fit: cover;
+border-radius: 5px;
+}
+.adimgg:hover{
+  transform: scale(1.10);
+  transition: transform 0.2s ease-in-out;
+
+}

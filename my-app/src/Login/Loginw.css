@@ -1,0 +1,111 @@
+/* Background styling */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('forest-branch-texture-environment-foliage-pattern-green-jungle-color-insect-darkness-flora-invertebrate-conifer-trees-leaves-outdoors-woods-rainforest-habitat-beetle-screenshot-natural-environment-computer-.jpg') no-repeat center;
+  background-size: cover;
+
+}
+
+/* Glassmorphism Login Box */
+.login-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  width: 350px;
+  padding-right:60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Title Styling */
+.log {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* Input Field Styling */
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  transition: 0.3s;
+}
+
+.input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.input:focus {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Login Button */
+.form-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.form-btn:hover {
+  background: linear-gradient(135deg, #5a7bfc, #914cec);
+  transform: scale(1.05);
+}
+
+/* Login Link */
+.text {
+  margin-top: 15px;
+}
+
+.text h3 {
+  font-size: 14px;
+  color: white;
+}
+
+.text a {
+  color: #ffdd57;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.text a:hover {
+  text-decoration: underline;
+}

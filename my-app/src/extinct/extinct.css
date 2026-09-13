@@ -1,0 +1,145 @@
+/* extinct.css */
+.extinct-page{
+  background-color: black;
+  padding-bottom: 48px;
+}
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-imggg {
+  width: 100%;
+
+
+
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000043;
+
+}
+
+.content {
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+.content h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 10px;
+  -webkit-text-stroke: 2px black; /* stroke thickness & color */
+  color: #ffffff; /* fill color */
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 1px black; /* stroke thickness & color */
+  color: #ffffff; /* fill color */
+}
+
+.explore-btn {
+  background-color: #0f100f;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #4e4e4e;
+}
+
+/* Dino Card Container */
+
+.dino-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px;
+  background: #000000;
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.dino-card {
+  position: relative;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.dino-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+}
+
+.dino-imge {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  filter: brightness(90%);
+  transition: filter 0.3s ease;
+}
+
+.dino-card:hover .dino-imge {
+  filter: brightness(100%);
+}
+
+.dino-name-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #00ffff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.dino-name-overlay a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dino-name-overlay a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .dino-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 28px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .dino-container {
+    grid-template-columns: 1fr;
+  }
+}
